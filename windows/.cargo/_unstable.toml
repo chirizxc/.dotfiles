@@ -1,0 +1,17 @@
+[unstable]
+codegen-backend = true
+profile-rustflags = true
+
+[build]
+incremental = true
+rustflags = ["-Z", "threads=8"]
+
+[profile.dev]
+opt-level = 1
+strip = "debuginfo"
+debug = "line-tables-only"
+codegen-backend = "cranelift"
+
+[profile.dev.package."*"]
+debug = false
+opt-level = 3
