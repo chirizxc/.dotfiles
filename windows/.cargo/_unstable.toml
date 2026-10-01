@@ -15,3 +15,6 @@ codegen-backend = "cranelift"
 [profile.dev.package."*"]
 debug = false
 opt-level = 3
+
+[env]
+CC_KNOWN_WRAPPER_CUSTOM = "kache"
