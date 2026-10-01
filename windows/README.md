@@ -43,6 +43,10 @@ scoop install sqlite
 scoop bucket add suzuki-shunsuke https://github.com/suzuki-shunsuke/scoop-bucket
 scoop install pinact
 
+# https://github.com/kunobi-ninja/kache
+scoop bucket add kunobi https://github.com/kunobi-ninja/scoop-kunobi
+scoop install kunobi/kache
+
 # https://gitforwindows.org
 scoop bucket add main && scoop install main/git
 ```
