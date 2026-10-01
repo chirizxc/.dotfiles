@@ -1,6 +1,7 @@
 [build]
 incremental = true
 rustflags = ["-Z", "threads=8"]
+rustc-wrapper = "kache"
 
 [profile.dev]
 opt-level = 1
@@ -10,6 +11,3 @@ debug = "line-tables-only"
 [profile.dev.package."*"]
 debug = false
 opt-level = 3
-
-[env]
-CC_KNOWN_WRAPPER_CUSTOM = "kache"
